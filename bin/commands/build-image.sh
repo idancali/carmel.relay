@@ -14,7 +14,8 @@ else
     cp -r public .deploy
     cp -r Dockerfile .deploy
     cd .deploy
-    docker build -t $IMAGE_PATH .
+    
+    docker build --platform linux/amd64 -t $IMAGE_PATH .
     echo "Building container image $IMAGE_PATH... "
     echo "[OK] Successfully built container image $IMAGE_PATH"
 fi

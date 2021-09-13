@@ -2,3 +2,4 @@ node_modules
 keys/
 .DS_Store
 .deploy
+package-lock.json
